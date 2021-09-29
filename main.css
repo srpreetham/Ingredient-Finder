@@ -1,0 +1,126 @@
+.nav {
+    display: grid;
+    place-items: right;
+    text-align: right;
+    border-radius: 10px;
+    box-shadow: -0.5rem 0 0.75rem #555;
+    margin:1em;
+}
+ul {
+    list-style-type: none;
+}
+* {
+    font-family: Helvetica;
+}
+:root {
+    --blue: #cae4ff;
+    --red: #fd9696;		
+    --lavender: #e4c8ff;	
+}
+body::-webkit-scrollbar {
+    width:0.75 rem;
+}
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 1px solid var(--blue);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+body {
+    background-color: #fcfca0;
+}
+
+nav li {
+    display: inline;			
+    padding: 10px;
+    font-weight: 700;
+    margin: 5px;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.child {
+    flex: 1 1 500px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: var(--blue);
+    padding: 30px;
+    margin: 20px;
+    place-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: -0.5rem 0 0.75rem #555;
+}
+/*.ingredients {
+    height: auto;
+    display: grid; 
+    justify-content: left;
+    margin: 5px;
+    background-color: var(--blue);
+}*/
+h2,button {
+    margin: 5px;
+}
+input[type="text"] {
+    margin: 5px;
+    padding: 10px;
+    width: 70%;
+    box-shadow: inset 0 0 30px 0px rgba(192,192,192,0.4);
+    border-radius: 5px;
+}
+input[type="text"]:focus {
+    border: 3px solid red;
+}
+li {
+    display: flex;
+    font-weight: bold;
+    max-width: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+li button {
+    background-color: transparent;
+    border-style: none;
+}
+li p {
+    all:unset;
+}
+
+#ingredints ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 2;
+    max-height: 250px;
+}
+.row-container {
+    display: flex; 
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.search {
+    box-shadow: none;
+}
+
+.left {
+    display: flex;
+    max-height: 300px;
+    min-width: 500px;
+    flex-direction: column;
+}
+
+#listButtons li {
+    display: inline-flex;
+    place-items: center;
+    border: 2px solid white;
+    margin-left: 5px;
+}
+
+#listButtons ul {
+    display: flex;
+    flex-wrap: wrap;
+}
